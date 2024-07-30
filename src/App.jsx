@@ -15,7 +15,7 @@ function App() {
   const inputHandler = (event) => {
     setUserName("")
     const inputName = event.target.value;
-    setIsChar([...inputName].every((char) => /^[a-zA-Z]$/.test(char)));
+    setIsChar([...inputName].every((char) => /^[A-Za-zА-Яа-яЁёІЇҐґЄєії]$/.test(char)));
     isChar && setInputVal(inputName);
   };
 
