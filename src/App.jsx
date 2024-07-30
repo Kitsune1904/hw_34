@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import "./App.css";
 import UserName from "./components/UserName";
 
@@ -16,7 +16,7 @@ function App() {
     setUserName("")
     const inputName = event.target.value;
     setIsChar([...inputName].every((char) => /^[A-Za-zА-Яа-яЁёІЇҐґЄєії]$/.test(char)));
-    isChar && setInputVal(inputName);
+    isChar ? setInputVal(inputName) : setInputVal('');
   };
 
   return (
