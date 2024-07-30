@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  margin-left: 10px;
+}
+
+.alertInput {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 10px 0;
+  background-color: rgba(165, 42, 42, 0.493);
+  border-radius: 2px;
+}
+
+.special {
+  font-weight: bold;
+  text-transform: capitalize;
+}
